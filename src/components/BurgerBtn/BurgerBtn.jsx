@@ -2,11 +2,11 @@ import React from 'react';
 
 import './BurgerBtn.module.scss';
 
-const BurgerBtn = () => {
+const BurgerBtn = ({onClick}) => {
   return (
-    <button class="burger-btn">
-        <div class="burger-btn__box">
-            <div class="burger-btn__bars"></div>
+    <button className="burger-btn" onClick={onClick}>
+        <div className="burger-btn__box">
+            <div className="burger-btn__bars"></div>
         </div>
     </button>
   );
