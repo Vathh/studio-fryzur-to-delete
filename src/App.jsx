@@ -1,10 +1,13 @@
 import React from 'react';
+import BurgerBtn from './components/BurgerBtn/BurgerBtn';
 
 import './App.scss';
 
 const App = () => {
   return ( 
-    <header>Hello World! mama mia</header>
+    <header>
+      <BurgerBtn />
+    </header>
    );
 }
  

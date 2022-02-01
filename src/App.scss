@@ -1,7 +1,28 @@
-body{
-  background-color: black;
+@import "./components/colors";
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-header{
-  color: red;
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    background-color: $black;
+    color: #fff;
+}
+
+.wrapper{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
 }
