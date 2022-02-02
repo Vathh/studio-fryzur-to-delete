@@ -26,7 +26,7 @@
       font-size: 2.8rem;
       text-decoration: none;
       text-align: center;
-
+      
       &::before{
           content: '';
           position: absolute;
@@ -37,19 +37,19 @@
           transform: scaleY(0);
           transition: transform .3s;
           background-color: $orange;
-      }
-
-      &:hover::before{
+        }
+        
+        &:hover::before{
           transform: scaleY(1);
+        }
       }
-  }
-}
-
-.navactive{
-  color: $gold;
-  transform: scale(1.1);
-}
-
+    }
+    
+    .navactive{
+      color: $gold;
+      transform: scale(1.1);
+    }
+    
 .nav-items-animation{
   animation: navItemsAnimation 1s both;
 }

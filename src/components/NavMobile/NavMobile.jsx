@@ -7,15 +7,12 @@ const NavMobile = () => {
 
   const [isMobileLinksVisible, setIsMobileLinksVisible] = useState(false);
 
-  const handleBurgerBtnClick = () => setIsMobileLinksVisible(!isMobileLinksVisible)
-
-  console.log(isMobileLinksVisible);
-  
+  const toggleMobileLinks = () => setIsMobileLinksVisible(!isMobileLinksVisible)  
 
   return ( 
     <>
-      <BurgerBtn onClick={handleBurgerBtnClick}/>
-      <MobileLinks isVisible={isMobileLinksVisible}/>
+      <BurgerBtn toggleMobileLinks={toggleMobileLinks} />
+      <MobileLinks isVisible={isMobileLinksVisible} toggleMobileLinks={toggleMobileLinks}/>
     </>
    );
 }

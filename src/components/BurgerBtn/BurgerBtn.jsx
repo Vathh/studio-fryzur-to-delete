@@ -2,9 +2,9 @@ import React from 'react';
 
 import './BurgerBtn.module.scss';
 
-const BurgerBtn = ({onClick}) => {
+const BurgerBtn = ({toggleMobileLinks}) => {
   return (
-    <button className="burger-btn" onClick={onClick}>
+    <button className="burger-btn" onClick={toggleMobileLinks}>
         <div className="burger-btn__box">
             <div className="burger-btn__bars"></div>
         </div>
