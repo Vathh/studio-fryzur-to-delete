@@ -1,6 +1,7 @@
 import React from 'react';
 
 import NavLink from './NavLink';
+import fryzlogo from '../../img/fryzlogo.jpg'
 
 import './NavLarge.module.scss';
 
@@ -16,7 +17,7 @@ const NavLarge = () => {
         ref: '',
       },
       {
-        title: <img src="dist/img/fryzlogo.jpg" alt="Logo firmy - Studio fryzur. Urszula Kotowska."/>,
+        title: <img src={fryzlogo} alt="Logo firmy - Studio fryzur. Urszula Kotowska."/>,
         ref: '',
       },
       {

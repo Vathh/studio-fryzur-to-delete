@@ -27,6 +27,14 @@ module.exports = {
         ],
       },
       {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
         test: /\.(s(a|c)ss|css)$/,
         exclude: /\.module\.(s(a|c)ss)$/,
         use: [
