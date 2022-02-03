@@ -36,13 +36,13 @@ const NavLarge = () => {
 
   const navLinksToDisplay = navLinksData.map(link => {
     return (
-      <NavLink title={link.title}/>
+      <NavLink title={link.title} key={link.title}/>
     )
   })
 
   return ( 
-    <nav class="nav__large">
-      <div class="nav__box1">
+    <nav className="nav__large">
+      <div className="nav__box1">
         {navLinksToDisplay}
       </div>
     </nav>

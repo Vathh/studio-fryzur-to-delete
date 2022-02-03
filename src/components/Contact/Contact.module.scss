@@ -1,0 +1,84 @@
+@import '../colors';
+
+.contact{
+  position: relative;
+  // background-image: url('../../dist/img/woman-5989552_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .section__header{
+      padding-top: 20px;
+  }
+
+  &__city{
+      position: relative;
+      width: 100%;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+
+      &-name{
+          position: relative;
+          color: $orange;
+          font-size: 2.7rem; 
+      }
+  }
+
+  &__shadow{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: $black;
+      opacity: 0.6;
+  }
+
+  &__box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      
+      
+      &-item{
+          height: 140px;
+          width: 140px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background-color: rgba(10,10,10,.7);
+          color: $white;
+          margin: 0 20px 20px;
+
+          .fas{
+              font-size: 3.5rem;
+              margin-bottom: 5px;
+              color: $orange;
+          }
+
+          &-title{
+              margin-bottom: 5px;
+          }
+          
+          &-text{
+              text-align: center;
+              font-size: 1.5rem;
+          }
+
+          &-phone{
+              position: relative;
+              text-align: center;
+              text-decoration: none;     
+              color: $white;     
+              z-index: 10;  
+          }
+      }
+
+      .wide{
+          width: 320px;
+      }
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavLink = ({title}) => {
   return ( 
-    <a class="nav__box1-navitem">{title}</a>
+    <a className="nav__box1-navitem">{title}</a>
    );
 }
  
