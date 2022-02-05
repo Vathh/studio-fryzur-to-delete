@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './BurgerBtn.module.scss';
+import '../styles/BurgerBtn.module.scss';
 
 const BurgerBtn = ({toggleMobileLinks}) => {
   return (

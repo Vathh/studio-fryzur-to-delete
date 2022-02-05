@@ -1,9 +1,9 @@
 import React from 'react';
 
-import NavLink from './NavLink';
-import fryzlogo from '../../img/fryzlogo.jpg'
+import NavLink from '../components/NavLink';
+import fryzlogo from '../img/fryzlogo.jpg'
 
-import './NavLarge.module.scss';
+import '../styles/NavLarge.module.scss';
 
 const NavLarge = () => {
 

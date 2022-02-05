@@ -1,8 +1,8 @@
 import React from 'react';
 
-import fryzlogo from '../../img/fryzlogo.jpg'
+import fryzlogo from '../img/fryzlogo.jpg'
 
-import './HomeHeader.module.scss';
+import '../styles/HomeHeader.module.scss';
 
 const HomeHeader = () => {
   return ( 

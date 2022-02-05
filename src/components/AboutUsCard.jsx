@@ -1,14 +1,10 @@
 import React from 'react';
 
-import colouringCardHomepage from '../../img/colouring-card-homepage.jpg'
-
-import './AboutUsCard.module.scss';
+import '../styles/AboutUsCard.module.scss';
 
 const AboutUsCard = ({number, title, text, photo}) => {
 
   const classe = `aboutus__card card-${number}`;
-
-  console.log(photo);
 
   return ( 
     <div className={classe} style={{backgroundImage: `url(${photo})`}}>          

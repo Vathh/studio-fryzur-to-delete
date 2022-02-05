@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactCity = ({name, street, postCode, phone}) => {
 
-  phoneNumberForHref = `tel:${phone}`
+  const phoneNumberForHref = `tel:${phone}`
 
   return ( 
     <>

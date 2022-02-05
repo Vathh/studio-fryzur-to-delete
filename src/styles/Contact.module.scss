@@ -1,8 +1,7 @@
-@import '../colors';
+@import './colors';
 
 .contact{
   position: relative;
-  // background-image: url('../../dist/img/woman-5989552_1920.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -81,4 +80,47 @@
           width: 320px;
       }
   }
+}
+
+@media only screen and (min-width: 1200px){
+    .contact{    
+        &__city{
+            padding-bottom: 30px;    
+            &-name{
+                font-size: 2.6rem; 
+            }
+        }
+    
+        &__box{           
+            
+            &-item{
+                height: 200px;
+                width: 240px;
+                display: flex;
+    
+                .fas{
+                    font-size: 4rem;
+                    margin-bottom: 20px;
+                }
+    
+                &-title{
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                }
+                
+                &-text{
+                    font-size: 1.6rem;
+                    line-height: 2;
+                }
+    
+                &-phone{
+                    line-height: 2; 
+                }
+            }
+    
+            .wide{
+                width: 420px;
+            }
+        }
+    }
 }

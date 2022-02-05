@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
-import MobileLinks from '../MobileLinks/MobileLinks';
-import BurgerBtn from '../BurgerBtn/BurgerBtn';
+import MobileLinks from '../components/MobileLinks';
+import BurgerBtn from '../components/BurgerBtn';
 
 const NavMobile = () => {
 

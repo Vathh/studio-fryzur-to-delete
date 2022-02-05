@@ -1,27 +1,27 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import BurgerBtn from './components/BurgerBtn/BurgerBtn';
-import NavMobile from './components/NavMobile/NavMobile';
-import NavLarge from './components/NavLarge/NavLarge';
-import HomeHeader from './components/HomeHeader/HomeHeader';
-import Welcome from './components/Welcome/Welcome';
-import AboutUs from './components/AboutUs/AboutUs';
-import Contact from './components/Contact/Contact';
+import NavMobile from './layouts/NavMobile';
+import NavLarge from './layouts/NavLarge';
+import HomeHeader from './bigComponents/HomeHeader';
+import Footer from './layouts/Footer';
+import Page from './layouts/Page';
 
 import './App.scss';
 
 const App = () => {
   return ( 
-    <>
-      <NavMobile />
-      <NavLarge />
-      <HomeHeader />
+    
+    <Router>
+      {<NavMobile />}
+      {<NavLarge />}
+      {<HomeHeader />}
       <main>
-        <Welcome />
-        <AboutUs />
-        <Contact />
+        {<Page />}
       </main>
-    </>
+      {<Footer />}
+    </Router>
+    
    );
 }
  

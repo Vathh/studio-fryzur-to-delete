@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './MobileLinks.module.scss'
+import '../styles/MobileLinks.module.scss'
 
 const MobileLink = ({onClick, title, delayTime, isVisible}) => {
 
